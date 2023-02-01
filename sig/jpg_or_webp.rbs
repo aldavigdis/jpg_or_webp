@@ -1,0 +1,12 @@
+class JpgOrWebp
+  VERSION: String
+  DEFAULT_FORMAT: String
+  DEFAULT_USER_AGENT: String
+
+  @user_agent: String?
+  @browser: untyped
+
+  def initialize : (?String user_agent) -> void
+
+  def image_format: () -> (String)
+end
