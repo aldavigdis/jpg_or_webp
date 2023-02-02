@@ -26,12 +26,14 @@ as an optimisation tool.
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add jpg_or_webp
+    $ bundle add jpg_or_webp --github=aldavigdis/jpg_or_webp --branch 'main'
 
 If bundler is not being used to manage dependencies, install the gem by
-executing:
+installing the `specific_install` gem and then executing `gem specific_install`
+like so:
 
-    $ gem install jpg_or_webp
+    $ gem install specific_install
+    $ gem specific_install https://github.com/aldavigdis/jpg_or_webp
 
 ## Usage
 
@@ -49,7 +51,7 @@ jpg_or_webp.image_format
 ### Use with Active Storage
 
 Let's say you want to pull an image variant from Active Storage based on the
-current useragent's image format support.
+current useragent's image format support. Then you can do it like this:
 
 ```ruby
 book        = Book.find('666')
