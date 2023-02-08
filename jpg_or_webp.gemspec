@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = 'jpg_or_webp'
-  spec.version = '0.1.0'
+  spec.version = '0.1.1'
   spec.authors = ['Alda Vigdís Skarphéðinsdóttir']
   spec.email = ['aldavigdis@aldavigdis.is']
 
