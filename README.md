@@ -6,8 +6,8 @@ and WebP.
 ## What is it good for?
 
 While we may want to serve WebP images to every browser that supports it (and
-also make Google Lighthouse and PageSpeed Insights scores higher), some browser
-do not support the format yet.
+also make Google Lighthouse and PageSpeed Insights scores higher), some
+browsers do not support the format yet.
 
 JPEG support can be assumed to be enabled by default while some browsers and
 many legacy versions of the same browsers may or may not support modern image
