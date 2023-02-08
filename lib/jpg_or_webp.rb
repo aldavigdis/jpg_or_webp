@@ -14,6 +14,7 @@ class JpgOrWebp
   end
 
   def image_format
+    return 'jpg' if @browser.unknown?
     return 'jpg' if @browser.ie?
     return 'jpg' if @browser.safari? && @browser.platform.mac?('<11.6')
     return 'jpg' if @browser.platform.ios?('<14')
