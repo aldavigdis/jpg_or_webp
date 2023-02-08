@@ -26,14 +26,11 @@ as an optimisation tool.
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add jpg_or_webp --github=aldavigdis/jpg_or_webp --branch 'main'
+    $ bundle add jpg_or_webp
 
-If bundler is not being used to manage dependencies, install the gem by
-installing the `specific_install` gem and then executing `gem specific_install`
-like so:
+If bundler is not being used to manage dependencies:
 
-    $ gem install specific_install
-    $ gem specific_install https://github.com/aldavigdis/jpg_or_webp
+    $ gem install jpg_or_webp
 
 ## Usage
 
