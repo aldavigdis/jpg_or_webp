@@ -10,6 +10,14 @@ RSpec.describe JpgOrWebp do
     expect(j.image_format).to eq('jpg')
   end
 
+  it 'sends JPEGs to the LinkedIn crawler' do
+    j = JpgOrWebp.new(
+      'LinkedInBot/1.0 (compatible; Mozilla/5.0; ' \
+      'Apache-HttpClient +http://www.linkedin.com)'
+    )
+    expect(j.image_format).to eq('jpg')
+  end
+
   it 'assumes a recent version of Chrome prefers WebP' do
     j = JpgOrWebp.new(
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' \
